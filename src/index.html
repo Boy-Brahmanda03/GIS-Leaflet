@@ -12,8 +12,8 @@
   </head>
   <body>
     <!-- header -->
-    <header class="bg-white">
-      <nav class="bg-white border-gray-200 shadow-lg">
+    <header>
+      <nav class="bg-white size-auto shadow-lg">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
           <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
@@ -23,14 +23,14 @@
       </nav>
     </header>
     <!-- end header -->
-
-    <ul class="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-      <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-        <div class="flex items-center ps-3">
-          <label for="list-radio-license" class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Maps Type</label>
+    <div id="maps" class="px-4 lg:py-56 py-36 w-svw"></div>
+    <ul class="w-48 h-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-sm">
+      <li class="w-full border-b border-gray-200 rounded-t-lg">
+        <div class="flex items-center">
+          <label for="list-radio-license" class="w-full py-3 text-center text-lg font-bold text-gray-900">Maps Type</label>
         </div>
       </li>
-      <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+      <li class="w-full border-b border-gray-200 rounded-t-lg">
         <div class="flex items-center ps-3">
           <input
             id="list-radio-id"
@@ -42,7 +42,7 @@
           <label for="list-radio-id" class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">State ID</label>
         </div>
       </li>
-      <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+      <li class="w-full border-b border-gray-200 rounded-t-lg">
         <div class="flex items-center ps-3">
           <input
             id="list-radio-military"
@@ -54,11 +54,20 @@
           <label for="list-radio-military" class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">US Military</label>
         </div>
       </li>
+      <li class="w-full border-gray-200 rounded-t-lg dark:border-gray-600">
+        <div class="flex items-center ps-3">
+          <input
+            id="list-radio-passport"
+            type="radio"
+            value=""
+            name="list-radio"
+            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+          />
+          <label for="list-radio-passport" class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">US Passport</label>
+        </div>
+      </li>
     </ul>
-    <div id="maps" class="flex-auto px-4 lg:py-56"></div>
-    <div class="container bg-black">
-      <h1>hahhaha</h1>
-    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
